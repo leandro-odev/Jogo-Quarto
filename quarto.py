@@ -29,13 +29,19 @@ tabuleiro = [
     ]
 
 while True:
-    peca = input('Qual peça escolhe pro seu adversário? ')
-    print('\n')
+
+    while True:
+        peca = input('Qual peça escolhe pro seu adversário? ')
+        print('\n')
+        if 'A' in peca or 'V' in peca:
+            break
+        else:
+            print('Peça inválida\n')
 
     while True:
         x = int(input('Digite a linha: '))
         y = int(input('Digite a coluna: '))
-        if x > 3 or y > 3 or tabuleiro[x][y] != '    ':
+        if x > 3 or x < 0 or y > 3 or y < 0 or tabuleiro[x][y] != '    ':
             print('Posição inválida\n')
         else:
             break
