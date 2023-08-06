@@ -1,0 +1,4 @@
+from components.colorir import colorir
+
+def print_game(matriz):
+    print(f'\n----------------------------\n {colorir(matriz[0][0])} | {colorir(matriz[0][1])} | {colorir(matriz[0][2])} | {colorir(matriz[0][3])} \n----------------------------\n {colorir(matriz[1][0])} | {colorir(matriz[1][1])} | {colorir(matriz[1][2])} | {colorir(matriz[1][3])} \n----------------------------\n {colorir(matriz[2][0])} | {colorir(matriz[2][1])} | {colorir(matriz[2][2])} | {colorir(matriz[2][3])} \n----------------------------\n {colorir(matriz[3][0])} | {colorir(matriz[3][1])} | {colorir(matriz[3][2])} | {colorir(matriz[3][3])} \n----------------------------\n')
